@@ -11,7 +11,12 @@ const PopulationData = () => {
     setError(null);
     try {
       const timestamp = new Date().getTime();
-      const response = await axios.get(`https://www.toontownrewritten.com/api/population?ts=${timestamp}`);
+      const response = await axios.get(`https://www.toontownrewritten.com/api/population?ts=${timestamp}`,{
+        headers: {
+          'User-Agent': 'ttr population analysis (https://github.com/chrisboudreau1999/ttrpopulationstats)'
+        }
+      }
+      );
       setPopulationData(response.data);
 
       // Send the fetched data to the backend server
