@@ -36,3 +36,12 @@ app.post('/api/savePopulation', async (req, res) => {
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
+
+app.get('/api/getPopulation', async (req, res) => {
+  try {
+    const populationData = await Population.find(); 
+    res.json(populationData);
+  } catch (error) {
+    res.status(500).send('Error retrieving data');
+  }
+});
