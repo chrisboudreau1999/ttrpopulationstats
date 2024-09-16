@@ -7,6 +7,7 @@ export default function PopulationData() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [fetchCount, setFetchCount] = useState(0);
+  const [dataCount, setDataCount] = useState(0);
   const [pData, setPData] = useState([]);
   const [xLabels, setXLabels] = useState([]);
   const [timeZone, setTimeZone] = useState('America/New_York');
@@ -24,8 +25,10 @@ export default function PopulationData() {
     setError(null);
     try {
       const response = await axios.get('http://localhost:5000/api/getPopulation');
-      setPopulationData(response.data);
-      calculateHourlyAverages(response.data, timeZone);
+      const data = response.data;
+      setPopulationData(data);
+      setDataCount(data.length); // Set the count of entries
+      calculateHourlyAverages(data, timeZone);
     } catch (error) {
       console.error('Error fetching population data:', error);
       setError('Failed to fetch population data.');
@@ -73,7 +76,9 @@ export default function PopulationData() {
   return (
     <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4">
       <div className="bg-white rounded-lg shadow-lg p-6 w-full max-w-6xl">
-        <h1 className="text-3xl font-bold text-gray-900 mb-8 text-center">Toontown Rewritten Population Data</h1>
+        <h1 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+          Toontown Rewritten Population Data ({dataCount} Entries)
+        </h1>
         
         <div className="flex flex-col lg:flex-row items-center justify-center gap-8">
           <div className="w-full lg:w-2/3 flex justify-center">
