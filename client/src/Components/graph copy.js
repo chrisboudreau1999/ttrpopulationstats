@@ -24,8 +24,7 @@ export default function PopulationData() {
     setLoading(true);
     setError(null);
     try {
-      // Use the Vercel-hosted API endpoint
-      const response = await axios.get('https://ttr-api.vercel.app/api/getPopulation');
+      const response = await axios.get('http://localhost:5000/api/getPopulation');
       const data = response.data;
       setPopulationData(data);
       setDataCount(data.length); // Set the count of entries
