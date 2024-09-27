@@ -24,8 +24,7 @@
    "predeploy": "npm run build",
    "deploy": "gh-pages -d build"
   },
-  "homepage": "https://github.com/chrisboudreau1999/ttrpopulationstats",
-
+  "homepage": "https://chrisboudreau1999.github.io/ttrpopulationstats",
   "eslintConfig": {
     "extends": [
       "react-app",
