@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/chrisboudreau1999/ttrpopulationstats/static/css/main.7e5b7ce3.css",
-    "main.js": "/chrisboudreau1999/ttrpopulationstats/static/js/main.8f7b6587.js",
-    "static/js/453.419a5d54.chunk.js": "/chrisboudreau1999/ttrpopulationstats/static/js/453.419a5d54.chunk.js",
-    "index.html": "/chrisboudreau1999/ttrpopulationstats/index.html",
-    "main.7e5b7ce3.css.map": "/chrisboudreau1999/ttrpopulationstats/static/css/main.7e5b7ce3.css.map",
-    "main.8f7b6587.js.map": "/chrisboudreau1999/ttrpopulationstats/static/js/main.8f7b6587.js.map",
-    "453.419a5d54.chunk.js.map": "/chrisboudreau1999/ttrpopulationstats/static/js/453.419a5d54.chunk.js.map"
+    "main.css": "/ttrpopulationstats/static/css/main.7e5b7ce3.css",
+    "main.js": "/ttrpopulationstats/static/js/main.b456ab17.js",
+    "static/js/453.419a5d54.chunk.js": "/ttrpopulationstats/static/js/453.419a5d54.chunk.js",
+    "index.html": "/ttrpopulationstats/index.html",
+    "main.7e5b7ce3.css.map": "/ttrpopulationstats/static/css/main.7e5b7ce3.css.map",
+    "main.b456ab17.js.map": "/ttrpopulationstats/static/js/main.b456ab17.js.map",
+    "453.419a5d54.chunk.js.map": "/ttrpopulationstats/static/js/453.419a5d54.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7e5b7ce3.css",
-    "static/js/main.8f7b6587.js"
+    "static/js/main.b456ab17.js"
   ]
 }
